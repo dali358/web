@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="LOGO.png" alt="Logo de Tienda Virtual" class="logo"> 
+            <h1>Abarrotes en General</h1>
+        </div>
+        <div class="cart">
+            <span>Carrito: </span>
+            <span id="cart-count">0</span> productos
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="harina.png" alt="Harina">
+            <h2>Harina</h2>
+            <p>S/.110</p>
+            <button class="add-to-cart" data-name="Harina" data-price="110">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="arroz.avif" alt="Arroz">
+            <h2>Arroz</h2>
+            <p>S/.120</p>
+            <button class="add-to-cart" data-name="Arroz" data-price="120">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="azucar.webp" alt="Azucar">
+            <h2>Azucar</h2>
+            <p>S/.130</p>
+            <button class="add-to-cart" data-name="Azucar" data-price="130">Añadir al carrito</button>
+        </div>
+    </section>
+
+    <section class="cart-items">
+        <div class="cart-header">
+            <img src="car.svg" alt="Carrito de compras" class="cart-icon">
+            <h2></h2>
+        </div>
+        <ul id="cart-list">
+            <!-- Los artículos del carrito aparecerán aquí -->
+        </ul>
+        <div class="total">
+            Total: S/.<span id="total-price">0</span>
+        </div>
+        <button id="empty-cart">Vaciar carrito</button>
+        <a id="purchase-link" href="#" target="_blank" class="hidden">
+            <button id="purchase-button">Realizar compra</button>
+        </a>
+    </section>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
